@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>讀碼練習頁</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="reader">
+    <section class="hero">
+      <p class="eyebrow">Chapter 14 Example</p>
+      <h1>讀懂 AI 產生的程式碼</h1>
+      <p>先理解檔案分工與事件流程，再開始修改。</p>
+    </section>
+
+    <section class="workspace">
+      <div class="toolbar" aria-label="讀碼重點">
+        <button class="tab-button active" type="button" data-target="html">HTML</button>
+        <button class="tab-button" type="button" data-target="css">CSS</button>
+        <button class="tab-button" type="button" data-target="js">JavaScript</button>
+        <button class="tab-button" type="button" data-target="checklist">檢查清單</button>
+      </div>
+
+      <article id="html" class="note-panel active">
+        <h2>HTML：先找頁面區塊</h2>
+        <p>觀察頁面有哪些主要區塊，例如 hero、toolbar、note-panel。先理解內容結構，不急著改樣式。</p>
+        <pre><code>&lt;section class="hero"&gt;
+  &lt;h1&gt;讀懂 AI 產生的程式碼&lt;/h1&gt;
+&lt;/section&gt;</code></pre>
+      </article>
+
+      <article id="css" class="note-panel">
+        <h2>CSS：用 class 對照畫面</h2>
+        <p>找到 HTML 裡的 class，再到 CSS 中搜尋同名選擇器，理解哪些樣式控制間距、顏色與排列。</p>
+        <pre><code>.note-panel {
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+}</code></pre>
+      </article>
+
+      <article id="js" class="note-panel">
+        <h2>JavaScript：追蹤事件流程</h2>
+        <p>先找 <code>addEventListener</code>，再看事件發生後改了哪些 class 或文字。</p>
+        <pre><code>button.addEventListener("click", () =&gt; {
+  showPanel(button.dataset.target);
+});</code></pre>
+      </article>
+
+      <article id="checklist" class="note-panel">
+        <h2>修改前檢查清單</h2>
+        <label><input type="checkbox"> 我知道要改哪個檔案</label>
+        <label><input type="checkbox"> 我知道改完要測試什麼</label>
+        <label><input type="checkbox"> 我只做一個小修改</label>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

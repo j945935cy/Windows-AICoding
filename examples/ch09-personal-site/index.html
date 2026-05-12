@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>林安 | AI Coding 初學者</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">林安</a>
+    <button class="menu-button" type="button" aria-label="開啟選單" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="主要導覽">
+      <a href="#about">關於我</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">作品</a>
+      <a href="#contact">聯絡</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">AI Coding Beginner</p>
+      <h1>我正在用 Codex 學會做出自己的網頁作品。</h1>
+      <p>這是一個只使用 HTML、CSS、JavaScript 製作的個人介紹網站，用來整理學習進度、展示作品，也練習和 Codex 協作。</p>
+      <a class="button" href="#projects">查看作品</a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>關於我</h2>
+      </div>
+      <p class="wide-text">我正在學習 AI coding，目標是先掌握 HTML、CSS、JavaScript 的基礎，再用 Codex 協助規劃、產生、修改與除錯。我的學習方式是每一章都做出一個可以打開、可以測試的小作品。</p>
+    </section>
+
+    <section class="section soft" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>目前正在練習的能力</h2>
+      </div>
+      <div class="skill-grid">
+        <article>
+          <h3>HTML 結構</h3>
+          <p>使用語意化標籤整理頁面內容。</p>
+        </article>
+        <article>
+          <h3>CSS 排版</h3>
+          <p>用留白、卡片與響應式設計改善閱讀體驗。</p>
+        </article>
+        <article>
+          <h3>JavaScript 互動</h3>
+          <p>處理點擊、表單、狀態更新與 DOM 操作。</p>
+        </article>
+        <article>
+          <h3>Codex 協作</h3>
+          <p>把需求拆小，請 Codex 協助產生與解釋程式。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>練習作品</h2>
+      </div>
+      <div class="project-grid">
+        <button class="project-card" type="button" data-detail="第一個網頁用來練習 HTML、CSS、JavaScript 三個檔案的分工。">
+          <span>01</span>
+          <h3>第一個網頁</h3>
+          <p>建立基本頁面與按鈕互動。</p>
+        </button>
+        <button class="project-card" type="button" data-detail="Prompt 筆記小工具練習輸入框、清單、新增資料與錯誤提示。">
+          <span>02</span>
+          <h3>Prompt 筆記</h3>
+          <p>輸入 prompt 並加入清單。</p>
+        </button>
+        <button class="project-card" type="button" data-detail="需求拆解表把模糊想法整理成 Codex 可以執行的任務摘要。">
+          <span>03</span>
+          <h3>需求拆解表</h3>
+          <p>把網站想法轉成清楚任務。</p>
+        </button>
+      </div>
+      <p id="projectDetail" class="project-detail">點擊一張作品卡片查看說明。</p>
+    </section>
+
+    <section class="section soft" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>一起建立下一個作品</h2>
+      </div>
+      <p class="wide-text">下一步可以把這個網站改成你的版本：換上你的名字、技能、作品與聯絡方式，讓它成為你的第一個作品集入口。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>林安 | AI Coding 初學者</p>
+    <p>HTML + CSS + JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

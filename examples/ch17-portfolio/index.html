@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>林安 | AI Coding 作品集</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">林安</a>
+    <button class="menu-button" type="button" aria-label="開啟選單" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="主要導覽">
+      <a href="#skills">技能</a>
+      <a href="#work">作品</a>
+      <a href="#contact">聯絡</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">AI Coding Portfolio</p>
+      <h1>我用 Codex 和前端基礎完成了一組可展示作品。</h1>
+      <p>這個作品集整理 HTML、CSS、JavaScript 練習成果，展示從靜態頁面到互動工具的學習路線。</p>
+      <a class="button" href="#work">查看作品</a>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>目前能完成的前端任務</h2>
+      </div>
+      <div class="skill-grid">
+        <article><h3>頁面結構</h3><p>用語意化 HTML 規劃清楚內容。</p></article>
+        <article><h3>清爽排版</h3><p>用 CSS Grid、Flexbox 與響應式設計整理畫面。</p></article>
+        <article><h3>互動邏輯</h3><p>用 JavaScript 處理事件、狀態與資料保存。</p></article>
+        <article><h3>AI 協作</h3><p>用明確 prompt 讓 Codex 協助規劃、修改與除錯。</p></article>
+      </div>
+    </section>
+
+    <section class="section soft" id="work">
+      <div class="section-heading split">
+        <div>
+          <p class="eyebrow">Work</p>
+          <h2>作品展示</h2>
+        </div>
+        <div class="filters">
+          <button class="filter-button active" type="button" data-filter="all">全部</button>
+          <button class="filter-button" type="button" data-filter="page">頁面</button>
+          <button class="filter-button" type="button" data-filter="tool">工具</button>
+          <button class="filter-button" type="button" data-filter="workflow">流程</button>
+        </div>
+      </div>
+
+      <div id="projectGrid" class="project-grid"></div>
+      <article id="projectDetail" class="detail-panel">
+        <p class="eyebrow">Selected Project</p>
+        <h3>選擇一個作品</h3>
+        <p>點擊作品卡片後，這裡會顯示作品重點與學到的能力。</p>
+      </article>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact-panel">
+        <p class="eyebrow">Next</p>
+        <h2>下一步是把範例改成你的真實作品集。</h2>
+        <p>換上你的名字、專案連結、學習心得與聯絡方式，讓這個網站成為你的第一個前端展示入口。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>林安 | AI Coding 作品集</p>
+    <p>HTML + CSS + JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

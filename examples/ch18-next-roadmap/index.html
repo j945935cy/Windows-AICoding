@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>下一步學習路線圖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="roadmap">
+    <section class="hero">
+      <p class="eyebrow">Chapter 18 Example</p>
+      <h1>下一步學習路線圖</h1>
+      <p>從 HTML、CSS、JavaScript 入門，銜接 Git、API、部署與作品深化。</p>
+    </section>
+
+    <section class="summary">
+      <article>
+        <span id="completedCount">0</span>
+        <p>已完成</p>
+      </article>
+      <article>
+        <span id="remainingCount">0</span>
+        <p>待完成</p>
+      </article>
+      <article>
+        <span id="percentText">0%</span>
+        <p>進度</p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Roadmap</p>
+          <h2>4 週進階路線</h2>
+        </div>
+        <button id="resetButton" type="button">重置</button>
+      </div>
+      <div class="progress-track">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <div id="roadmapList" class="roadmap-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

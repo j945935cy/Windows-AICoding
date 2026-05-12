@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>學習儀表板</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="dashboard">
+    <section class="hero">
+      <p class="eyebrow">Chapter 13 Example</p>
+      <h1>AI Coding 學習儀表板</h1>
+      <p>追蹤章節進度，把學習狀態保存到瀏覽器。</p>
+    </section>
+
+    <section class="summary" aria-label="學習進度摘要">
+      <article>
+        <span id="percentText">0%</span>
+        <p>總進度</p>
+      </article>
+      <article>
+        <span id="completedText">0</span>
+        <p>已完成</p>
+      </article>
+      <article>
+        <span id="remainingText">0</span>
+        <p>未完成</p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Progress</p>
+          <h2>章節清單</h2>
+        </div>
+        <button id="resetButton" type="button">重置進度</button>
+      </div>
+
+      <div class="progress-track" aria-label="總進度條">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+
+      <div id="lessonList" class="lesson-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

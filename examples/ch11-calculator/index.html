@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>簡易計算機</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="calculator" aria-label="簡易計算機">
+      <p class="eyebrow">Chapter 11 Example</p>
+      <h1>簡易計算機</h1>
+
+      <output id="display" class="display" aria-live="polite">0</output>
+
+      <div class="keys">
+        <button type="button" data-action="clear" class="utility">C</button>
+        <button type="button" data-action="backspace" class="utility">⌫</button>
+        <button type="button" data-action="percent" class="utility">%</button>
+        <button type="button" data-operator="/" class="operator">÷</button>
+
+        <button type="button" data-number="7">7</button>
+        <button type="button" data-number="8">8</button>
+        <button type="button" data-number="9">9</button>
+        <button type="button" data-operator="*" class="operator">×</button>
+
+        <button type="button" data-number="4">4</button>
+        <button type="button" data-number="5">5</button>
+        <button type="button" data-number="6">6</button>
+        <button type="button" data-operator="-" class="operator">−</button>
+
+        <button type="button" data-number="1">1</button>
+        <button type="button" data-number="2">2</button>
+        <button type="button" data-number="3">3</button>
+        <button type="button" data-operator="+" class="operator">+</button>
+
+        <button type="button" data-number="0" class="zero">0</button>
+        <button type="button" data-action="decimal">.</button>
+        <button type="button" data-action="equals" class="equals">=</button>
+      </div>
+
+      <p class="hint">可使用鍵盤：數字、+、-、*、/、Enter、Backspace、Escape。</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

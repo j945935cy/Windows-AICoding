@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>學習進度 | AI Coding 入門</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">AI Coding 入門</a>
+    <button class="nav-toggle" type="button" aria-label="開啟選單" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="主要導覽">
+      <a href="index.html">首頁</a>
+      <a href="chapters.html">章節</a>
+      <a href="projects.html">專案</a>
+      <a href="examples.html">範例</a>
+      <a href="appendices.html">附錄</a>
+      <a href="progress.html">進度</a>
+      <a href="manuscript.html">書稿</a>
+      <a href="search.html">搜尋</a>
+      <a href="print.html">列印</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Progress</p>
+      <h1>學習進度</h1>
+      <p>勾選已完成章節，追蹤整本書的閱讀與實作進度。</p>
+    </section>
+
+    <section class="section soft">
+      <div class="progress-shell">
+        <div class="progress-summary">
+          <article>
+            <span id="progressPercent">0%</span>
+            <p>總進度</p>
+          </article>
+          <article>
+            <span id="progressDone">0</span>
+            <p>已完成</p>
+          </article>
+          <article>
+            <span id="progressLeft">18</span>
+            <p>未完成</p>
+          </article>
+        </div>
+
+        <div class="progress-track wide">
+          <div id="progressFill" class="progress-bar"></div>
+        </div>
+
+        <div class="progress-actions">
+          <button id="resetProgress" class="copy-button" type="button">重置進度</button>
+        </div>
+
+        <div id="progressList" class="chapter-progress-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" type="button" aria-label="回到頂部">↑</button>
+  <footer class="site-footer"><p>AI Coding 入門</p><p>18 章學習進度。</p></footer>
+  <script src="script.js"></script>
+  <script src="progress.js"></script>
+</body>
+</html>
+
+

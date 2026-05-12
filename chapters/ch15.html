@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>第 15 章：除錯入門 | AI Coding 入門</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">AI Coding 入門</a>
+    <button class="nav-toggle" type="button" aria-label="開啟選單" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="主要導覽">
+      <a href="../index.html">首頁</a>
+      <a href="../chapters.html">章節</a>
+      <a href="../projects.html">專案</a>
+      <a href="../examples.html">範例</a>
+      <a href="../appendices.html">附錄</a>
+      <a href="../progress.html">進度</a>
+      <a href="../manuscript.html">書稿</a>
+      <a href="../search.html">搜尋</a>
+      <a href="../print.html">列印</a>
+    </nav>
+  </header>
+  <main class="book-page">
+    <article class="book-content">
+      <p class="eyebrow">Chapter 15</p>
+      <h1>除錯入門</h1>
+      <p class="lead">學會重現問題、讀錯誤訊息、定位檔案、做最小修改，並把錯誤資訊整理給 Codex。</p>
+      <h2>除錯流程</h2>
+      <ol>
+        <li>重現問題。</li>
+        <li>讀錯誤訊息。</li>
+        <li>找到相關檔案。</li>
+        <li>提出可能原因。</li>
+        <li>做最小修改並重新測試。</li>
+      </ol>
+      <h2>Prompt 範例</h2>
+      <pre><code>我正在除錯一個只使用 HTML、CSS、JavaScript 的網頁。
+預期結果：點擊按鈕後新增一筆資料。
+實際結果：點擊後沒有反應。
+Console 錯誤訊息：Cannot read properties of null。
+請先解釋這個錯誤代表什麼，再告訴我應該檢查哪些地方。不要直接重寫整個檔案。</code></pre>
+      <h2>範例檔案</h2>
+      <p>本章範例在 <code>examples/ch15-debug-workbench/</code>。</p>
+      <div class="book-nav">
+        <a class="button secondary" href="ch14.html">上一章</a>
+        <a class="button primary" href="ch16.html">下一章</a>
+      </div>
+    </article>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

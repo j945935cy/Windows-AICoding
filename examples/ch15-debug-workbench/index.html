@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>除錯工作台</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="debugger">
+    <section class="hero">
+      <p class="eyebrow">Chapter 15 Example</p>
+      <h1>除錯工作台</h1>
+      <p>選擇一個錯誤案例，練習從錯誤訊息推回可能原因。</p>
+    </section>
+
+    <section class="workbench">
+      <div class="case-list" aria-label="錯誤案例">
+        <button class="case-button active" type="button" data-case="html">HTML 路徑錯誤</button>
+        <button class="case-button" type="button" data-case="css">CSS 選擇器錯誤</button>
+        <button class="case-button" type="button" data-case="js">JavaScript 找不到元素</button>
+        <button class="case-button" type="button" data-case="storage">localStorage JSON 錯誤</button>
+      </div>
+
+      <article class="case-panel">
+        <p class="eyebrow" id="caseType">HTML</p>
+        <h2 id="caseTitle">HTML 路徑錯誤</h2>
+        <dl>
+          <dt>錯誤訊息</dt>
+          <dd id="caseError"></dd>
+          <dt>可能原因</dt>
+          <dd id="caseCause"></dd>
+          <dt>修復方式</dt>
+          <dd id="caseFix"></dd>
+        </dl>
+        <pre id="casePrompt"></pre>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

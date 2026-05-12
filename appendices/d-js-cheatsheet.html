@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>附錄 D：JavaScript 速查 | AI Coding 入門</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">AI Coding 入門</a>
+    <nav class="site-nav" aria-label="主要導覽">
+      <a href="../index.html">首頁</a>
+      <a href="../chapters.html">章節</a>
+      <a href="../examples.html">範例</a>
+      <a href="../appendices.html">附錄</a>
+      <a href="../search.html">搜尋</a>
+      <a href="../print.html">列印</a>
+    </nav>
+  </header>
+  <main class="book-page">
+    <article class="book-content">
+      <p class="eyebrow">Appendix D</p>
+      <h1>JavaScript 常用語法速查</h1>
+      <h2>DOM 與事件</h2>
+      <pre><code>const button = document.querySelector("#button");
+button.addEventListener("click", () => {
+  console.log("clicked");
+});</code></pre>
+      <h2>修改畫面</h2>
+      <pre><code>title.textContent = "新的標題";
+card.classList.toggle("active");</code></pre>
+      <h2>localStorage</h2>
+      <pre><code>localStorage.setItem("todos", JSON.stringify(todos));
+const todos = JSON.parse(localStorage.getItem("todos")) || [];</code></pre>
+      <div class="book-nav"><a class="button secondary" href="../appendices.html">回附錄</a></div>
+    </article>
+  </main>
+</body>
+</html>
+
+
+

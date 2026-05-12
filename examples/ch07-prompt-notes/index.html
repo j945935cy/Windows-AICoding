@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompt 筆記小工具</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="app">
+      <p class="eyebrow">Chapter 07 Example</p>
+      <h1>Prompt 筆記小工具</h1>
+      <p class="intro">把常用 Codex prompt 存成清單。</p>
+
+      <div class="form-row">
+        <input id="promptInput" type="text" placeholder="輸入一則 prompt">
+        <button id="addButton" type="button">加入</button>
+      </div>
+
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+      <ul id="promptList" class="prompt-list"></ul>
+      <button id="clearButton" class="secondary" type="button">清空全部</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Coding 工作流程產生器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="builder">
+    <section class="hero">
+      <p class="eyebrow">Chapter 16 Example</p>
+      <h1>AI Coding 工作流程產生器</h1>
+      <p>把目標、範圍和完成標準整理成可交給 Codex 的任務。</p>
+    </section>
+
+    <section class="workspace">
+      <form id="workflowForm" class="form-panel">
+        <label>專案目標
+          <input id="goalInput" type="text" value="替待辦清單新增清空完成項目功能">
+        </label>
+        <label>本次範圍
+          <input id="scopeInput" type="text" value="只新增清空已完成項目的按鈕與邏輯">
+        </label>
+        <label>允許修改檔案
+          <input id="filesInput" type="text" value="index.html, script.js, style.css">
+        </label>
+        <label>完成標準
+          <textarea id="doneInput">點擊按鈕後，所有已完成項目會被移除，未完成項目保留，localStorage 同步更新。</textarea>
+        </label>
+        <button type="submit">產生流程</button>
+      </form>
+
+      <article class="output-panel">
+        <div class="output-header">
+          <h2>產生結果</h2>
+          <button id="copyButton" type="button">複製 Prompt</button>
+        </div>
+        <pre id="workflowOutput"></pre>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

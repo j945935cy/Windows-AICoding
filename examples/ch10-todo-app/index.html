@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>待辦清單 App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="todo-app">
+      <p class="eyebrow">Chapter 10 Example</p>
+      <h1>待辦清單 App</h1>
+      <p class="intro">練習用 JavaScript 管理資料狀態，並保存到 localStorage。</p>
+
+      <form id="todoForm" class="todo-form">
+        <input id="todoInput" type="text" placeholder="輸入一件待辦事項" autocomplete="off">
+        <button type="submit">新增</button>
+      </form>
+
+      <div class="toolbar" aria-label="篩選待辦">
+        <button class="filter-button active" type="button" data-filter="all">全部</button>
+        <button class="filter-button" type="button" data-filter="active">未完成</button>
+        <button class="filter-button" type="button" data-filter="done">已完成</button>
+      </div>
+
+      <p id="statusText" class="status">尚未新增待辦事項。</p>
+      <ul id="todoList" class="todo-list"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

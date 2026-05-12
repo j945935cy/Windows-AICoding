@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>圖片展示頁</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">Chapter 12 Example</p>
+      <h1>圖片展示頁</h1>
+      <p>使用 Grid、分類篩選與 modal，整理你的練習作品。</p>
+    </section>
+
+    <section class="gallery-section" aria-label="圖片展示">
+      <div class="filters">
+        <button class="filter-button active" type="button" data-filter="all">全部</button>
+        <button class="filter-button" type="button" data-filter="web">網頁</button>
+        <button class="filter-button" type="button" data-filter="app">App</button>
+        <button class="filter-button" type="button" data-filter="prompt">Prompt</button>
+      </div>
+
+      <div class="gallery-grid">
+        <button class="gallery-card tone-blue" type="button" data-category="web" data-title="個人介紹網站" data-description="用 HTML、CSS、JavaScript 完成的第一個完整單頁網站。">
+          <span>Web</span>
+          <h2>個人介紹網站</h2>
+        </button>
+        <button class="gallery-card tone-purple" type="button" data-category="app" data-title="待辦清單 App" data-description="練習新增、完成、刪除、篩選與 localStorage 儲存。">
+          <span>App</span>
+          <h2>待辦清單 App</h2>
+        </button>
+        <button class="gallery-card tone-green" type="button" data-category="app" data-title="簡易計算機" data-description="不用 eval，透過狀態管理完成計算機邏輯。">
+          <span>App</span>
+          <h2>簡易計算機</h2>
+        </button>
+        <button class="gallery-card tone-pink" type="button" data-category="prompt" data-title="Prompt 筆記" data-description="輸入常用 prompt，並把內容加入清單。">
+          <span>Prompt</span>
+          <h2>Prompt 筆記</h2>
+        </button>
+        <button class="gallery-card tone-sky" type="button" data-category="prompt" data-title="需求拆解表" data-description="把模糊網站想法整理成 Codex 能執行的任務摘要。">
+          <span>Prompt</span>
+          <h2>需求拆解表</h2>
+        </button>
+        <button class="gallery-card tone-violet" type="button" data-category="web" data-title="學習筆記頁" data-description="使用語意化 HTML 整理學習目標、筆記與常用 prompt。">
+          <span>Web</span>
+          <h2>學習筆記頁</h2>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="closeModal" class="close-button" type="button" aria-label="關閉">×</button>
+      <p id="modalCategory" class="eyebrow"></p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

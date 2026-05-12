@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Coding 需求拆解表</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="builder">
+      <p class="eyebrow">Chapter 08 Example</p>
+      <h1>需求拆解表</h1>
+      <p class="intro">輸入網站想法，產生可以交給 Codex 的任務摘要。</p>
+
+      <label>網站類型
+        <input id="siteType" type="text" value="個人介紹網站">
+      </label>
+      <label>目標讀者
+        <input id="audience" type="text" value="想認識我的訪客">
+      </label>
+      <label>主要功能
+        <textarea id="features">首頁、自我介紹、技能列表、作品卡片</textarea>
+      </label>
+      <label>本次範圍
+        <input id="scope" type="text" value="先只產生 HTML 結構">
+      </label>
+
+      <button id="generateButton" type="button">產生任務摘要</button>
+
+      <pre id="output"></pre>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

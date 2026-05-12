@@ -1,0 +1,86 @@
+@media print {
+  @page {
+    margin: 18mm;
+  }
+
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    color: #111827;
+    background: #ffffff !important;
+    font-size: 12pt;
+    line-height: 1.6;
+  }
+
+  .site-header,
+  .site-footer,
+  .nav-toggle,
+  .back-to-top,
+  .book-nav,
+  .hero-actions,
+  .filter-bar,
+  .copy-button,
+  button {
+    display: none !important;
+  }
+
+  .book-page,
+  .section,
+  .page-hero {
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+
+  .book-content {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #ffffff;
+  }
+
+  .book-content h1,
+  .page-hero h1 {
+    font-size: 28pt;
+    line-height: 1.15;
+    page-break-after: avoid;
+  }
+
+  .book-content h2 {
+    margin-top: 22pt;
+    font-size: 18pt;
+    page-break-after: avoid;
+  }
+
+  .book-content p,
+  .book-content li {
+    font-size: 12pt;
+  }
+
+  .book-content pre {
+    white-space: pre-wrap;
+    border: 1px solid #d1d5db;
+    background: #f8fafc !important;
+    page-break-inside: avoid;
+  }
+
+  .print-section {
+    page-break-before: always;
+  }
+
+  .print-section:first-of-type {
+    page-break-before: auto;
+  }
+
+  a {
+    color: #111827;
+    text-decoration: none;
+  }
+
+  a[href]::after {
+    content: "";
+  }
+}

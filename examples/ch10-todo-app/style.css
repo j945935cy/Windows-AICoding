@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #111827;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(219, 234, 254, 0.95), transparent 38%),
+    #f5f7fb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.todo-app {
+  width: min(100%, 760px);
+  padding: 38px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #5b6fb7;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(38px, 7vw, 64px);
+  line-height: 1.05;
+}
+
+.intro,
+.status {
+  color: #6b7280;
+  font-size: 17px;
+}
+
+.todo-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+input {
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 12px 16px;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #2563eb;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.filter-button {
+  color: #2563eb;
+  background: #ffffff;
+}
+
+.filter-button.active {
+  color: #ffffff;
+  background: #2563eb;
+}
+
+.todo-list {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.todo-item.done .todo-text {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.toggle-button,
+.delete-button {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+}
+
+.toggle-button {
+  color: #2563eb;
+  background: #ffffff;
+}
+
+.delete-button {
+  border-color: #fecaca;
+  color: #b91c1c;
+  background: #fff5f5;
+}
+
+@media (max-width: 620px) {
+  .todo-app {
+    padding: 28px 20px;
+  }
+
+  .todo-form {
+    grid-template-columns: 1fr;
+  }
+}
