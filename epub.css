@@ -2,13 +2,13 @@
 
 /* 1. Remove TOC Numbers */
 nav#toc ol,
-nav[epub\:type="toc"] ol {
+nav.toc ol {
   list-style-type: none;
   padding-left: 1.5em;
 }
 
 nav#toc ol li,
-nav[epub\:type="toc"] ol li {
+nav.toc ol li {
   list-style-type: none;
 }
 
