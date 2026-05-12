@@ -1,0 +1,12 @@
+{
+  "name": "windows-aicoding",
+  "version": "1.0.0",
+  "description": "AI Coding 入門",
+  "scripts": {
+    "dev": "live-server --port=8080 --ignore=node_modules,.git",
+    "build:epub": "node tools/build-epub.js"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

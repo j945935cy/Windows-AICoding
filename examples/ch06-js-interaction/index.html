@@ -1,24 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JavaScript 學習狀態卡</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>JavaScript 互動練習</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="page">
-    <section class="card">
-      <p class="eyebrow">Chapter 06 Example</p>
-      <h1>學習狀態卡</h1>
-      <p id="statusText">今天還沒有完成任務。</p>
-      <strong id="countText">完成數量：0</strong>
-      <div class="actions">
-        <button id="completeButton" type="button">完成一項</button>
-        <button id="resetButton" class="secondary" type="button">重置</button>
-      </div>
-    </section>
-  </main>
-  <script src="script.js"></script>
+    <main>
+        <h1>學習狀態卡</h1>
+        <p id="statusMsg">目前狀態：尚未開始</p>
+        <p>已完成數量：<span id="count">0</span></p>
+        
+        <button id="completeBtn">完成一項</button>
+        <button id="resetBtn">重置</button>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

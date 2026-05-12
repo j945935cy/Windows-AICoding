@@ -6,6 +6,8 @@
   <title>第 4 章：HTML 基礎與頁面結構 | AI Coding 入門</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../print.css" media="print">
+  <!-- Prism.js Syntax Highlighting Theme -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
@@ -30,7 +32,10 @@
       <p class="lead">HTML 負責網頁內容與結構。這一章會用語意清楚的標籤組出一個基本頁面。</p>
       <h2>核心觀念</h2>
       <p>HTML 不是拿來設計樣式的工具，它的任務是描述內容是什麼。標題用標題標籤，段落用段落標籤，導覽用 <code>nav</code>，主要內容用 <code>main</code>。</p>
-      <h2>常用標籤</h2>
+      <h2>DOM Tree 視覺化概念</h2>
+<p>你可以把 HTML 想像成一棵倒長的樹（DOM Tree）。最外面是 <code>&lt;html&gt;</code>，裡面包著 <code>&lt;head&gt;</code> 和 <code>&lt;body&gt;</code>，而 <code>&lt;body&gt;</code> 裡面再包著標題、段落等。</p>
+<p>這棵樹的結構非常重要，因為後續的 CSS 和 JavaScript 都是靠這個「層級關係」來找到對應的元素的。</p>
+<h2>常用標籤</h2>
       <ul>
         <li><code>header</code>、<code>nav</code>、<code>main</code>、<code>section</code>、<code>footer</code></li>
         <li><code>h1</code> 到 <code>h6</code>、<code>p</code>、<code>ul</code>、<code>li</code>、<code>a</code></li>
@@ -46,6 +51,8 @@
     </article>
   </main>
   <script src="../script.js"></script>
+  <!-- Prism.js Syntax Highlighting Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 </body>
 </html>
 

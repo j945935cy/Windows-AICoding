@@ -6,6 +6,8 @@
   <title>第 13 章：學習儀表板 | AI Coding 入門</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../print.css" media="print">
+  <!-- Prism.js Syntax Highlighting Theme -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
@@ -45,6 +47,13 @@
       <pre><code>請只修改 script.js，根據課程資料陣列渲染學習清單。使用者點擊課程時切換完成狀態，更新完成數量、百分比、進度條，並保存到 localStorage。</code></pre>
       <h2>範例檔案</h2>
       <p>本章範例在 <code>examples/ch13-learning-dashboard/</code>。</p>
+      
+      <h3>進階挑戰 (Bonus Challenge)</h3>
+      <p>當你完成基礎版本後，請挑戰加入<strong>純 CSS 圓餅圖 (Pie Chart)</strong> 來視覺化總進度：</p>
+      <ul>
+        <li>用一個 <code>&lt;div&gt;</code> 並設定 <code>border-radius: 50%</code> 變成圓形。</li>
+        <li>使用 CSS <code>conic-gradient</code>，配合 JavaScript 動態修改角度（例如 <code>conic-gradient(#2563eb 0% X%, #e5e7eb X% 100%)</code>）。</li>
+      </ul>
       <div class="book-nav">
         <a class="button secondary" href="ch12.html">上一章</a>
         <a class="button primary" href="ch14.html">下一章</a>
@@ -52,6 +61,8 @@
     </article>
   </main>
   <script src="../script.js"></script>
+  <!-- Prism.js Syntax Highlighting Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 </body>
 </html>
 

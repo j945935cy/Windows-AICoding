@@ -6,6 +6,8 @@
   <title>第 11 章：簡易計算機 | AI Coding 入門</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../print.css" media="print">
+  <!-- Prism.js Syntax Highlighting Theme -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
@@ -45,6 +47,14 @@
       <pre><code>請只修改 script.js，實作計算機邏輯。不要使用 eval。功能包含數字、小數點、加減乘除、等號、清除，以及除以 0 的錯誤提示。</code></pre>
       <h2>範例檔案</h2>
       <p>本章範例在 <code>examples/ch11-calculator/</code>。</p>
+      
+      <h3>進階挑戰 (Bonus Challenge)</h3>
+      <p>當你完成基礎版本後，請挑戰加入<strong>歷史紀錄面板 (History Tape)</strong>：</p>
+      <ul>
+        <li>在計算機右側或下方新增一個清單。</li>
+        <li>每次按下等號時，把完整的算式 (例如 <code>12 + 5 = 17</code>) 記錄到陣列中，並渲染到歷史紀錄面板。</li>
+        <li>加入「清除歷史紀錄」按鈕。</li>
+      </ul>
       <div class="book-nav">
         <a class="button secondary" href="ch10.html">上一章</a>
         <a class="button primary" href="ch12.html">下一章</a>
@@ -52,6 +62,8 @@
     </article>
   </main>
   <script src="../script.js"></script>
+  <!-- Prism.js Syntax Highlighting Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 </body>
 </html>
 

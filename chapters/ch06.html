@@ -6,6 +6,8 @@
   <title>第 6 章：JavaScript 基礎 | AI Coding 入門</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../print.css" media="print">
+  <!-- Prism.js Syntax Highlighting Theme -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
@@ -36,7 +38,24 @@
         <li>更新資料</li>
         <li>把資料顯示回頁面</li>
       </ol>
-      <h2>常用語法</h2>
+      <h2>沒有 JS vs 有 JS 的差異</h2>
+<ul>
+<li><strong>沒有 JS 時的死網頁</strong>：按鈕按了沒反應，內容永遠是寫死的。</li>
+<li><strong>有 JS 後的活網頁</strong>：
+<ol>
+<li>監聽點擊：「當使用者按下按鈕時...」</li>
+<li>執行邏輯：「把目前數量加 1...」</li>
+<li>更新畫面：「把新的數字顯示在畫面上。」</li>
+</ol>
+</li>
+</ul>
+<p>這三個步驟就是前端互動的核心。</p>
+<h3>認識開發者工具 (Developer Tools)</h3>
+<p>在真正寫 JS 之前，你要先知道怎麼看到 JS 的錯誤訊息與輸出。<br>請在瀏覽器（如 Chrome 或 Edge）按下 <code>F12</code> 鍵，或者在網頁上點擊右鍵選擇「檢查 (Inspect)」，然後切換到 <strong>Console (主控台)</strong> 標籤頁。</p>
+<p>你可以試著在這個 Console 輸入你人生的第一行 JS 程式碼並按下 Enter：</p>
+<pre><code class="language-javascript">console.log("Hello AI Coding!");</code></pre>
+<p>如果你看到它在下一行印出了 <code>Hello AI Coding!</code>，恭喜你，這就是 JS 跟瀏覽器溝通的橋樑！未來所有除錯、變數檢查，都會在這裡進行。</p>
+<h2>常用語法</h2>
       <ul>
         <li><code>querySelector</code>：選取頁面元素</li>
         <li><code>addEventListener</code>：監聽事件</li>
@@ -54,6 +73,8 @@
     </article>
   </main>
   <script src="../script.js"></script>
+  <!-- Prism.js Syntax Highlighting Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 </body>
 </html>
 

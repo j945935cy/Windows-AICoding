@@ -6,6 +6,8 @@
   <title>第 8 章：AI Coding 的需求拆解方法 | AI Coding 入門</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../print.css" media="print">
+  <!-- Prism.js Syntax Highlighting Theme -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
@@ -36,7 +38,17 @@
         <li>修改範圍：這次只動哪裡。</li>
         <li>驗收標準：怎樣才算完成。</li>
       </ul>
-      <h2>Prompt 模板</h2>
+      <h3>具體情境演練：番茄鐘</h3>
+<p>讓我們用一個「番茄鐘計時器」來示範如何回答這 5 個問題：</p>
+<ol>
+<li><strong>這個網頁是給誰用的？</strong> 需要專注讀書的學生。</li>
+<li><strong>使用者進來第一眼要看到什麼？</strong> 一個大大的 25:00 倒數計時數字。</li>
+<li><strong>頁面需要哪些區塊？</strong> 時間顯示區、開始與暫停按鈕區。</li>
+<li><strong>哪些地方需要互動？</strong> 點擊「開始」時數字要每秒遞減；點擊「暫停」時要停止。</li>
+<li><strong>這次只要完成哪一小步？</strong> 我只要先做好「時間顯示區和按鈕的 HTML/CSS 版面就好，先不要做會動的計時功能」。</li>
+</ol>
+<p>將這樣具體的答案餵給 AI，它就不會擅作主張幫你寫出一堆你看不懂的複雜邏輯了！</p>
+<h2>Prompt 模板</h2>
       <pre><code>我要做一個 [網站類型]，使用者是 [目標讀者]。
 請先不要寫程式，先幫我拆解：
 1. 頁面區塊
@@ -54,6 +66,8 @@
     </article>
   </main>
   <script src="../script.js"></script>
+  <!-- Prism.js Syntax Highlighting Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 </body>
 </html>
 

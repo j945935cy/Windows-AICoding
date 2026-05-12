@@ -6,6 +6,8 @@
   <title>第 3 章：第一次和 Codex 協作 | AI Coding 入門</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../print.css" media="print">
+  <!-- Prism.js Syntax Highlighting Theme -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
@@ -38,7 +40,10 @@
         <li>範圍：這次只改哪個部分。</li>
         <li>輸出：希望 Codex 怎麼回答。</li>
       </ol>
-      <h2>協作流程</h2>
+      <h2>角色扮演 (Role-playing) 技巧</h2>
+<p>為了讓 AI 產生更符合業界標準、更專業的程式碼，你可以在 Prompt 的開頭賦予它一個角色。</p>
+<p>例如：<strong>「請以一位資深前端工程師的角度...」</strong> 或是 <strong>「你是一位擅長教學的程式導師...」</strong>。這能顯著提升 AI 輸出的穩定性與程式碼品質。</p>
+<h2>協作流程</h2>
       <p>先說明畫面，再請 Codex 規劃；一次只修改一個檔案或一個功能；修改後立刻測試。如果有錯誤，把錯誤訊息完整交給 Codex。</p>
       <h2>Prompt 範例</h2>
       <pre><code>請只修改 style.css，讓這個頁面看起來更清爽，使用白色背景、淺藍紫色調、8px 以下圓角。不要修改 HTML 和 JavaScript。</code></pre>
@@ -51,6 +56,8 @@
     </article>
   </main>
   <script src="../script.js"></script>
+  <!-- Prism.js Syntax Highlighting Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 </body>
 </html>
 

@@ -6,6 +6,8 @@
   <title>第 12 章：圖片展示頁 | AI Coding 入門</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../print.css" media="print">
+  <!-- Prism.js Syntax Highlighting Theme -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
@@ -45,6 +47,13 @@
       <pre><code>請只修改 script.js，替圖片展示頁加入分類篩選與 modal。點擊分類按鈕時過濾卡片；點擊卡片時開啟 modal；點擊關閉按鈕、背景或 Escape 時關閉 modal。</code></pre>
       <h2>範例檔案</h2>
       <p>本章範例在 <code>examples/ch12-gallery/</code>。</p>
+      
+      <h3>進階挑戰 (Bonus Challenge)</h3>
+      <p>當你完成基礎版本後，請挑戰加入<strong>平滑過場動畫 (CSS Transitions)</strong>：</p>
+      <ul>
+        <li>切換分類時，被隱藏的圖片不要瞬間消失，而是透過 <code>opacity</code> 與 <code>transform: scale()</code> 淡出縮小。</li>
+        <li>使用 JavaScript 的 <code>setTimeout</code> 或監聽 <code>transitionend</code> 事件，等動畫結束後再真正給予 <code>display: none</code>。</li>
+      </ul>
       <div class="book-nav">
         <a class="button secondary" href="ch11.html">上一章</a>
         <a class="button primary" href="ch13.html">下一章</a>
@@ -52,6 +61,8 @@
     </article>
   </main>
   <script src="../script.js"></script>
+  <!-- Prism.js Syntax Highlighting Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 </body>
 </html>
 

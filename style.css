@@ -619,6 +619,26 @@ a.chapter-card:hover {
   font-family: "SFMono-Regular", Consolas, monospace;
 }
 
+.book-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 15px;
+}
+
+.book-content th,
+.book-content td {
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  text-align: left;
+}
+
+.book-content th {
+  background: var(--bg-soft);
+  font-weight: 700;
+  color: var(--text);
+}
+
 .book-nav {
   display: flex;
   justify-content: space-between;

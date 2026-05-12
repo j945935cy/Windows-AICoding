@@ -1,28 +1,20 @@
-const statusText = document.querySelector("#statusText");
-const countText = document.querySelector("#countText");
-const completeButton = document.querySelector("#completeButton");
-const resetButton = document.querySelector("#resetButton");
+const completeBtn = document.querySelector("#completeBtn");
+const resetBtn = document.querySelector("#resetBtn");
+const countSpan = document.querySelector("#count");
+const statusMsg = document.querySelector("#statusMsg");
 
-let completedCount = 0;
+let currentCount = 0;
 
-function updateStatus() {
-  countText.textContent = `完成數量：${completedCount}`;
-
-  if (completedCount === 0) {
-    statusText.textContent = "今天還沒有完成任務。";
-  } else if (completedCount < 3) {
-    statusText.textContent = "很好，繼續累積小進度。";
-  } else {
-    statusText.textContent = "今天已經完成三項以上，節奏很穩。";
-  }
-}
-
-completeButton.addEventListener("click", () => {
-  completedCount += 1;
-  updateStatus();
+// 完成按鈕事件
+completeBtn.addEventListener("click", function() {
+    currentCount += 1;
+    countSpan.textContent = currentCount;
+    statusMsg.textContent = "目前狀態：學習中！";
 });
 
-resetButton.addEventListener("click", () => {
-  completedCount = 0;
-  updateStatus();
+// 重置按鈕事件 (對應 Chapter 6 練習)
+resetBtn.addEventListener("click", function() {
+    currentCount = 0;
+    countSpan.textContent = currentCount;
+    statusMsg.textContent = "目前狀態：尚未開始";
 });

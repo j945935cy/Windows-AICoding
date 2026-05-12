@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
@@ -6,6 +6,8 @@
   <title>第 1 章：什麼是 AI Coding | AI Coding 入門</title>
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../print.css" media="print">
+  <!-- Prism.js Syntax Highlighting Theme -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 <body>
   <header class="site-header">
@@ -30,20 +32,45 @@
     <article class="book-content">
       <p class="eyebrow">Chapter 01</p>
       <h1>什麼是 AI Coding</h1>
-      <p class="lead">AI coding 不是讓 AI 取代你寫程式，而是學會把想法拆清楚，交給 Codex 協助產生、修改、解釋與除錯程式碼。</p>
+      <p class="lead">AI coding 不是讓 AI 取代你寫程式，而是學會把想法拆清楚，交給 AI 助手協助產生、修改、解釋與除錯程式碼。</p>
       <h2>本章目標</h2>
-      <p>理解你和 Codex 的分工：你負責目標、決策與測試，Codex 協助把需求轉成程式碼。</p>
+      <p>理解你和 AI (如 Codex、ChatGPT 等) 的分工：你負責目標、決策與測試，AI 協助把需求轉成程式碼。</p>
       <h2>核心觀念</h2>
-      <p>初學者最容易犯的錯，是把一句很大的需求丟給 Codex，例如「幫我做一個網站」。比較好的方式是把需求拆小，限制技術、範圍與輸出格式。</p>
+      <p><strong>提供充足的「上下文 (Context)」</strong>：AI 只知道你告訴它的事。在編寫 Prompt 時，給予充足的「上下文」（例如目前的程式碼片段），產生的程式碼才會精準。</p>
+      <p>初學者最容易犯的錯，是把一句很大的需求丟給 AI，例如「幫我做一個網站」。比較好的方式是把需求拆小，限制技術、範圍與輸出格式。</p>
       <h2>AI 與人的分工</h2>
-      <ul>
-        <li>你負責說清楚目標、決定功能範圍、測試結果。</li>
-        <li>Codex 協助產生 HTML、CSS、JavaScript，並解釋與除錯。</li>
-      </ul>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>你（專案負責人）負責</th>
+              <th>AI（協作夥伴）負責</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>說清楚目標、決定功能範圍</strong></td>
+              <td><strong>產生 HTML、CSS、JavaScript 程式碼</strong></td>
+            </tr>
+            <tr>
+              <td><strong>檢查畫面是否符合需求</strong></td>
+              <td><strong>解釋看不懂的程式邏輯</strong></td>
+            </tr>
+            <tr>
+              <td><strong>測試按鈕與互動是否正常</strong></td>
+              <td><strong>改善版面與提供重構建議</strong></td>
+            </tr>
+            <tr>
+              <td><strong>保留能運作的版本</strong></td>
+              <td><strong>幫忙找出報錯的原因</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <h2>Prompt 範例</h2>
       <pre><code>請用初學者可以理解的方式，幫我規劃一個只使用 HTML、CSS、JavaScript 的個人介紹網站。先不要寫程式，請先列出頁面區塊、需要的檔案，以及每個檔案負責什麼。</code></pre>
       <h2>本章練習</h2>
-      <p>請寫出三個 prompt：請 Codex 規劃一個網頁、只產生 HTML、解釋產生的 HTML。</p>
+      <p>請在 VS Code 新增一個 <code>my-first-prompt.txt</code>，並寫下你想完成的第一個網頁的 3 到 5 個區塊，然後寫出三個 prompt：請 AI 規劃一個網頁、只產生 HTML、解釋產生的 HTML。</p>
       <div class="book-nav">
         <a class="button secondary" href="../chapters.html">回章節</a>
         <a class="button primary" href="ch02.html">下一章</a>
@@ -51,6 +78,8 @@
     </article>
   </main>
   <script src="../script.js"></script>
+  <!-- Prism.js Syntax Highlighting Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 </body>
 </html>
 
