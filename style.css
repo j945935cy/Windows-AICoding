@@ -912,3 +912,65 @@ a.chapter-card:hover {
     flex-direction: column;
   }
 }
+
+/* Purchase CTA & Locked Content Styles */
+.purchase-cta {
+  margin: 48px 0;
+  padding: 32px;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  background: #f0f7ff;
+  text-align: center;
+}
+
+.purchase-cta h3 {
+  margin: 0 0 12px;
+  color: #1e40af;
+}
+
+.purchase-cta p {
+  margin: 0 0 24px;
+  color: #3b82f6;
+  font-size: 16px;
+}
+
+.locked-content {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.locked-content::after {
+  content: "內容已鎖定";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(249, 250, 251, 0.86);
+  backdrop-filter: blur(4px);
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.locked-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 12px;
+  font-weight: 700;
+}
+
